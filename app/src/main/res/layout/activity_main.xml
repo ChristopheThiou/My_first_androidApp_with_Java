@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="30dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/t_hello"
+        android:textSize="30sp"
+        android:textColor="@color/myPrimaryColor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/msg_hello"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_marginLeft="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Test"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="false"
+            android:id="@+id/btn_valider"
+            android:text="Valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:onClick="test"
+            />
+
+        <TextView
+            android:textColor="@color/myPrimaryColor"
+            android:id="@+id/test_hello"
+            android:layout_alignLeft="@id/btn_valider"
+            android:layout_below="@id/btn_valider"
+            android:text="Hello from relative layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <GridLayout
+            android:rowCount="2"
+            android:columnCount="2"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/test_hello"
+            android:layout_width="300dp"
+            android:layout_height="300dp">
+
+            <Button android:text="Btn1" android:textColor="@color/myTrinaryColor" android:layout_margin="10dp"/>
+            <Button android:text="Btn2" android:layout_margin="10dp"/>
+            <Button android:text="Btn3" android:layout_margin="10dp"/>
+            <Button android:text="Btn4" android:layout_margin="10dp"/>
+
+        </GridLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>
